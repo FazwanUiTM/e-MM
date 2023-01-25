@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main"
+        android:orientation="vertical"
+        tools:context=".mentor.MentorProfileActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Mentor Profile"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/profile"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    android:layout_marginTop="30dp"
+                    app:civ_border_color="@color/white"/>
+
+                <TextView
+                    android:id="@+id/tvPerson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAppDec"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_field"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="15dp"
+                    android:drawableTint="@color/main"
+                    android:inputType="text"
+                    android:padding="20dp"
+                    android:paddingStart="15dp"
+                    android:singleLine="true"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="16sp"
+                    android:textColor="@color/main"/>
+
+                <TextView
+                    android:id="@+id/tvStudentID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAppDec"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_field"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="15dp"
+                    android:drawableTint="@color/main"
+                    android:inputType="text"
+                    android:padding="20dp"
+                    android:paddingStart="15dp"
+                    android:singleLine="true"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="16sp"
+                    android:textColor="@color/main"/>
+
+                <TextView
+                    android:id="@+id/tvGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAppDec"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_field"
+                    android:drawableStart="@drawable/ic_baseline_group_24"
+                    android:drawablePadding="15dp"
+                    android:drawableTint="@color/main"
+                    android:inputType="text"
+                    android:padding="20dp"
+                    android:paddingStart="15dp"
+                    android:singleLine="true"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="16sp"
+                    android:textColor="@color/main"/>
+
+                <TextView
+                    android:id="@+id/tvSemester"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAppDec"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_field"
+                    android:drawableStart="@drawable/ic_baseline_semester_24"
+                    android:drawablePadding="15dp"
+                    android:drawableTint="@color/main"
+                    android:inputType="text"
+                    android:padding="20dp"
+                    android:paddingStart="15dp"
+                    android:singleLine="true"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="16sp"
+                    android:textColor="@color/main"/>
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAppDec"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_field"
+                    android:drawableStart="@drawable/ic_baseline_phone_24"
+                    android:drawablePadding="15dp"
+                    android:drawableTint="@color/main"
+                    android:inputType="text"
+                    android:padding="20dp"
+                    android:paddingStart="15dp"
+                    android:singleLine="true"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="16sp"
+                    android:textColor="@color/main"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>

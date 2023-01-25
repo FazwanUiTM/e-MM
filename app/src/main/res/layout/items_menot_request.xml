@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_field"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FullName : "
+            android:textColor="@color/main"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FullName : "
+            android:textColor="@color/main"
+            android:textStyle="normal"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student ID : "
+            android:textColor="@color/main"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvStudentID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student ID : "
+            android:textColor="@color/main"
+            android:textStyle="normal"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group : "
+            android:textColor="@color/main"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group : "
+            android:textColor="@color/main"
+            android:textStyle="normal"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semester : "
+            android:textColor="@color/main"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvSemester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semester : "
+            android:textColor="@color/main"
+            android:textStyle="normal"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Subjects"
+            android:gravity="center"
+            android:textColor="@color/main"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Grades"
+            android:gravity="center"
+            android:textColor="@color/main"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvSubject1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Subjects"
+            android:singleLine="true"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center"
+            android:textColor="@color/main"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/tvGrade1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Grades"
+            android:singleLine="true"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center"
+            android:textColor="@color/main"
+            android:textStyle="normal"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvSubject2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Subjects"
+            android:singleLine="true"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center"
+            android:textColor="@color/main"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/tvGrade2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Grades"
+            android:singleLine="true"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center"
+            android:textColor="@color/main"
+            android:textStyle="normal"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvSubject3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Subjects"
+            android:singleLine="true"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center"
+            android:textColor="@color/main"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/tvGrade3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Grades"
+            android:singleLine="true"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center"
+            android:textColor="@color/main"
+            android:textStyle="normal"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvSubject4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Subjects"
+            android:singleLine="true"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center"
+            android:textColor="@color/main"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/tvGrade4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Grades"
+            android:singleLine="true"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center"
+            android:textColor="@color/main"
+            android:textStyle="normal"/>
+
+    </LinearLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnApprove"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_field"
+                android:backgroundTint="@color/main"
+                android:text="Approve"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnReject"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_field"
+                android:backgroundTint="@color/main"
+                android:layout_marginStart="20dp"
+                android:text="Reject"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+        
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</LinearLayout>

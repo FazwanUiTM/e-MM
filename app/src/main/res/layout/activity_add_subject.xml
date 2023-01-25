@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main"
+        android:orientation="vertical"
+        tools:context=".mentor.AddSubjectActivity">
+
+        <TextView
+            android:id="@+id/tvLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="MENTOR"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:text="Add Subject"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:fontFamily="sans-serif-black"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bg_field"
+                    android:hint="Subject"
+                    android:inputType="text"
+                    android:padding="20dp"
+                    android:paddingStart="15dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/main"
+                    android:textSize="16sp"
+                    android:textColor="@color/main"/>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_field"
+                    android:hint="Subject Code"
+                    android:inputType="text"
+                    android:padding="20dp"
+                    android:paddingStart="15dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/main"
+                    android:textSize="16sp"
+                    android:textColor="@color/main"/>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etLimit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_field"
+                    android:hint="Student Limit"
+                    android:inputType="text"
+                    android:padding="20dp"
+                    android:paddingStart="15dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/main"
+                    android:textSize="16sp"
+                    android:textColor="@color/main"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnAddSubject"
+                    android:layout_width="130dp"
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_field"
+                    android:text="Add"
+                    android:textColor="@color/main"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>

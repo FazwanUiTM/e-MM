@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "117525183760",
+    "project_id": "mentor-mentee-system-fe125",
+    "storage_bucket": "mentor-mentee-system-fe125.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117525183760:android:30154e7fb0611d27bc7995",
+        "android_client_info": {
+          "package_name": "com.dev.mentormenteesystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117525183760-pm193a4tm95gfhuk6336cvtff07k2nqs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsfrSB7CjQKRJBTffRj1BmSAuNNN-EtyU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117525183760-pm193a4tm95gfhuk6336cvtff07k2nqs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
