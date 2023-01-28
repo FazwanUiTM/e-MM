@@ -74,6 +74,28 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Day/Time : "
+                    android:textColor="@color/main"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDayTIme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FullName : "
+                    android:textColor="@color/main"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
         </LinearLayout>
 
     </RelativeLayout>

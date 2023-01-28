@@ -74,6 +74,21 @@
                     android:textSize="16sp"
                     android:textColor="@color/main"/>
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_field"
+                    android:hint="Day/Time"
+                    android:inputType="text"
+                    android:padding="20dp"
+                    android:paddingStart="15dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/main"
+                    android:textSize="16sp"
+                    android:textColor="@color/main"/>
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etLimit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

@@ -28,7 +28,7 @@ public class AddSubjectActivity extends AppCompatActivity {
     ProgressDialog progressDialog;
     FirebaseAuth auth;
     DatabaseReference dbReference;
-    String strSubjectName, strSubjectCode, strStudentLimit;
+    String strSubjectName, strSubjectCode, strDayTime, strStudentLimit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,18 +53,21 @@ public class AddSubjectActivity extends AppCompatActivity {
             public void onClick(View v) {
                 strSubjectName = binding.etSubject.getText().toString();
                 strSubjectCode = binding.etCode.getText().toString();
+                strDayTime = binding.etDateTime.getText().toString();
                 strStudentLimit = binding.etLimit.getText().toString();
 
                 if (strSubjectName.isEmpty()){
                     showToast("Please Enter Subject Name");
                 }else if (strSubjectCode.isEmpty()){
                     showToast("Please Enter Subject Code");
+                }else if (strDayTime.isEmpty()){
+                    showToast("Please Enter Day and Time");
                 }else if (strStudentLimit.isEmpty()){
                     showToast("Please Enter Subject Limit");
                 }else{
                     progressDialog.show();
 
-                    SubjectsModel model = new SubjectsModel(getFullName, strSubjectName, strSubjectCode, strStudentLimit, getImage ,auth.getCurrentUser().getUid());
+                    SubjectsModel model = new SubjectsModel(getFullName, strSubjectName, strSubjectCode, strDayTime, strStudentLimit, getImage ,auth.getCurrentUser().getUid());
                     String pushID = dbReference.push().getKey();
                     dbReference.child(pushID).setValue(model).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override

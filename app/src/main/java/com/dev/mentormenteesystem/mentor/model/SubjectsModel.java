@@ -1,15 +1,16 @@
 package com.dev.mentormenteesystem.mentor.model;
 
 public class SubjectsModel {
-    String fullName, subjectName, subjectCode, limitStudent, image, uID;
+    String fullName, subjectName, subjectCode, dayTime, limitStudent, image, uID;
 
-    public SubjectsModel() {
-    }
+    //public SubjectsModel() {
+    //}
 
-    public SubjectsModel(String fullName, String subjectName, String subjectCode, String limitStudent, String image, String uID) {
+    public SubjectsModel(String fullName, String subjectName, String subjectCode,String dayTime, String limitStudent, String image, String uID) {
         this.fullName = fullName;
         this.subjectName = subjectName;
         this.subjectCode = subjectCode;
+        this.dayTime = dayTime;
         this.limitStudent = limitStudent;
         this.image = image;
         this.uID = uID;
@@ -37,6 +38,14 @@ public class SubjectsModel {
 
     public void setSubjectCode(String subjectCode) {
         this.subjectCode = subjectCode;
+    }
+
+    public String getDayTime() {
+        return dayTime;
+    }
+
+    public void setDayTime(String dayTime) {
+        this.dayTime = dayTime;
     }
 
     public String getLimitStudent() {
